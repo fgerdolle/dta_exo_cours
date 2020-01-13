@@ -1,0 +1,34 @@
+html {
+    background-color: #1793d1 ;
+    text-align: center;
+}
+#entete{
+    background-color: whitesmoke;
+    border: black solid;
+}
+body {
+    border: 4px black solid;
+    background-color: whitesmoke;
+    padding-bottom: 400px;
+}
+p {
+    color: #4d4d4d ;
+    font-weight: bold;
+    font-size: 28px;
+}
+h2 {
+    color: #1793d1;
+}
+div {
+    display: inline-block;
+}
+
+#aaron {
+    padding-left: 75px;
+}
+#pomozov {
+    padding-left: 250px;
+}
+h3 {
+    font-size: 26px;
+}

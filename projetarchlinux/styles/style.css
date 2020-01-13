@@ -1,0 +1,93 @@
+html
+{
+    background-color: #1793d1;
+    text-align: center;
+}
+
+body
+{
+    position: relative;
+    left:10em;
+    background-color: whitesmoke;
+    border: 5px solid black;
+    width: 60em;
+    height: 60em;
+    
+}
+
+#entete
+{
+    background-color: whitesmoke;
+    border:  solid black;
+    
+}
+
+p
+{
+    color : #4d4d4d;
+    font-weight: bold;
+    font-size: 28px;
+}
+h1
+{
+    color:#1793d1;
+}
+
+#nospointfort
+{
+    position: absolute;
+    top: 8em;
+    left: 2em;
+    width: 445px;   
+    background-color: rgb(23, 187, 23);
+    color: #312f2f; 
+}
+
+#nospointfaible
+{
+    position: absolute;
+    top: 8em;
+    right: 2em;
+    width: 445px;
+    background-color: rgb(238, 48, 48);
+    color: #312f2f; 
+}
+
+
+#pointfaibleuser
+{
+    position: absolute;
+    top: 25em;
+    right: 2em;
+    width: 445px;
+    background-color: rgb(238, 48, 48);
+    color: #312f2f; 
+
+}
+
+#pointfortuser
+{
+    position: absolute;
+    top: 25em;
+    left: 2em;
+    width: 445px;
+    background-color: rgb(23, 187, 23);
+    color: #312f2f; 
+
+}
+
+#user
+{
+    position: absolute;
+    top: 14em;
+    left: 17em;
+    color:#4d4d4d;
+}
+
+#nous
+{
+    position: absolute;
+    top: 3em;
+    left: 17em;
+    color:#4d4d4d;
+}

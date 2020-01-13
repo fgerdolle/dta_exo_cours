@@ -1,0 +1,12 @@
+tr:nth-child(even) {
+    background : #4286f4;
+}
+
+tr:nth-child(odd) {
+    background : #b8cdef;
+}
+
+td {
+    width : 200px;
+    text-align : center;
+}

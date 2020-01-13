@@ -1,0 +1,16 @@
+#target {
+    width: 200px;
+}
+
+
+#go {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#stop {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}

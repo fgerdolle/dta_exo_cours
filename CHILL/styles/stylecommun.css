@@ -1,0 +1,73 @@
+/* J'applique ces style à tout mes élements*/
+*
+{
+    font-family: 'Mansalva', cursive, Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    background-color: black;
+}
+
+body
+{
+    margin: auto;
+    width: 60em;
+    background-image: linear-gradient(rgba(224, 198, 113, 0.774), rgba(102, 15, 15, 0.5)),
+    url('https://i.pinimg.com/564x/17/94/55/1794559aa9a1564e1b4f929cb61983f7.jpg')
+
+}
+
+/* j'applique ces stye à ma page*/
+#page
+{
+    margin: auto;
+    width: 60em;
+}
+
+/*j'applique ces style à mon entete*/
+header
+{
+    text-align: center;
+    background-repeat: repeat-x;
+    background-image: url('https://i.pinimg.com/564x/5b/f2/01/5bf2019e0ad4f015c200bb635511d8f8.jpg')
+}
+
+/*j'applique ces style à ma nav*/
+nav ul li
+{
+    list-style: none;
+
+}
+
+/*j'applique ces style à ma nav et mon ul et leur met un border*/
+nav ul 
+{
+    padding: 3px 0 ;
+    margin: 10px 0 10px 0 ;
+    border-bottom: 1px solid black;
+    display: flex;
+    
+}
+
+
+/*j'applique de nouveau des styles à ma nav afin de creer des onglets*/
+nav ul li a 
+{
+    padding: 3px , 0.5em;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-bottom: none;
+    background: rgb(162, 170, 180);
+    text-decoration: none;
+    color: black;
+}
+
+/* j'applique ces style au lien de la page en cours pour que l'onglet adequat indique ou nous sommes*/
+nav ul li a#actif
+{
+    background: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}

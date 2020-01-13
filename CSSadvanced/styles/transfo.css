@@ -1,0 +1,26 @@
+div {
+    margin: 50px;
+    padding: 10px;
+    border: solid;
+}
+
+#logo_dta_1 {
+    transform: rotate(10deg);   /* permet d'appliquer des transformation a l'image appliquer. Le degre defini le sens de rotation*/
+    transform-origin: 0 100%;   /* permet de positionner le centre de la rotation.  Le 0 est le point en bas à gauche*/
+}
+
+#logo_dta_2{
+    transform: scale(1.2);  /* permet de faire grossir ou rettrecir une image.  Les transforms peuvent ce chainer  exemple : rotate(10deg) scale(1.2) */
+}
+
+#logo_dta_3 {
+    transform: translate(250px, 100px);  /* permet de deplacer l'image*/
+}
+
+#logo_dta_4 {
+    transform: skewX(10deg); /* deforme  l'image */
+}
+
+#logo_dta_5 {
+    transform: rotate(10deg) scale(0.5) translate(500px, -100px) skewX(10deg);
+}
