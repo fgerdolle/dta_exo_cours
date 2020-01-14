@@ -1,0 +1,13 @@
+*
+{
+    box-sizing: border-box;
+}
+
+div.elementDuDamier
+{
+    border-color: whitesmoke;
+    height: 100px;
+    width: 25%;
+    float: left;
+    border: 1px solid black;
+}

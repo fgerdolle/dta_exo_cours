@@ -1,0 +1,115 @@
+h1
+{
+	color: #283583; 
+	font-family: "Times New Roman";
+	font-weight: bold;
+	text-decoration: underline;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+h2
+{
+	color: #283583; 
+	font-family: "Times New Roman";
+	font-weight: bold;
+	text-decoration: underline;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.container-fluid
+{
+	    margin-top: 15px;
+    margin-bottom: 15px;
+	
+}
+
+.nav-tabs .nav-link {
+    border: 4px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    margin-left: 20vw;
+    font-size : 1.4vw;
+    color: #283583;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    text-align: center;
+    margin-left: 30vw;
+    margin-top: 10vw;
+}
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+    height:400px;
+}
+
+#chart{
+    width: 10vw;
+}
+
+#chart2{
+    width: 20vw;
+    text-align: center;
+}
+
+#chartcenter{
+    text-align: center;
+}
+
+th{
+    text-align: left;
+}
+#Critere{
+    text-align: center;
+    
+}
+.col-sm{
+    padding: 0;
+}
+
+#tableone{
+    margin-left: 2vw;
+    margin-top: 5vw;
+}
+#tablegraphique{
+    width: 30vw;
+    text-align: right;
+}
+
+.card-img-top {
+    width: 10vw;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    margin-left: 5vw;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+}
+ol{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 10vw;
+}
+
+.btn-danger.disabled, .btn-danger:disabled {
+    color: #fff;
+    background-color: #283583;
+    border-color: #283583;
+}
+
+.form-check-label {
+    width : 100px;
+}
+
+
+.form-label
+{
+	padding-right : 30px;
+}

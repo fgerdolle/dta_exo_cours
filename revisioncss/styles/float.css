@@ -1,0 +1,64 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}    
+
+
+
+body
+{
+    width: 60em;
+    margin:0;
+    height: 50em;
+    border: 5px solid black;
+}
+
+
+
+p
+{
+    border: 5px solid black;
+}
+
+.float
+{
+    width: 22%;
+    float: left;
+    background-color: aquamarine;
+    margin-right: 10px;
+    margin-left: 20px;
+
+}
+
+.float2
+{
+    width: 22%;
+    float: left;
+    background-color: greenyellow;
+    margin-left: 20px;
+}
+
+.float3
+{
+    width: 22%;
+    float: left;
+    background-color: rebeccapurple;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.float4
+{
+    width: 22%;
+    float: right;
+    background-color: olivedrab;
+    margin-right: 20px;
+}
+
+.floatfoot
+{
+    clear: both;
+    margin-top: 19%;
+    background-color: rosybrown;
+}

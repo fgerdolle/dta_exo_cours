@@ -1,0 +1,50 @@
+*
+{
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+#titre
+{
+    text-decoration-line: underline;
+    font-size: 50px;
+    color: black;
+}
+/*j'applique ces style à mon entete*/
+header
+{
+    text-align: left;
+}
+
+/*j'applique ces style à ma nav*/
+nav ul li
+{
+    list-style: none;
+    display: inline;
+}
+
+/*j'applique ces style à ma nav et mon ul et leur met un border*/
+nav ul 
+{
+    padding: 3px 0 ;
+    margin: 10px 0 10px 0 ;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+/*j'applique de nouveau des styles à ma nav afin de creer des onglets*/
+nav ul li a 
+{
+    padding: 3px , 0.5em;
+    margin-left: 0.5rem;;
+    border: 1px solid black;
+    border-bottom: none;
+    background: #232323;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#liste li 
+{
+    list-style-position: inside;
+   
+}

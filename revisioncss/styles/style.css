@@ -1,0 +1,138 @@
+#top
+{
+    background-color: #ccc;
+    padding: 20px;
+}
+
+
+h1 + p 
+{
+    font-weight: bold;
+}
+
+h1 ~ p:hover
+{
+    color: blue;
+}
+
+
+/* je dit au selecteur avec le prametre nth-child de prendre tout les lignes paire */
+tr:nth-child(2n)
+{
+    background-color: #ffcc99;
+}
+/* je dit au selecteur avec le prametre nth-child de prendre tout les lignes impaire */
+tr:nth-child(2n+1)
+{
+    background-color: aqua;
+    color:green;
+}
+
+tr:hover td
+{
+    color: purple;
+    background-color: plum;
+}
+/* je dis au 1er enfant de tr soit la 1er colonne et la 3eme de s'aligner */
+tr td:nth-child(1), tr td:nth-child(3)
+{
+    text-align: center;
+}
+
+
+/* je retire les point de la liste*/
+li.telephone 
+{
+    list-style: none;
+}
+
+/* j'ajoute avant un li un élement. dans ce cas présent un caractere special trouver sur internet*/
+li.telephone:before
+{
+    content:"\260E";
+}
+/* j'ajoute après un li un élement.*/
+/*
+li::after
+{
+    content:">>";
+    color:rgb(255, 34, 5);
+}
+/* j'ajoute avant un ul un élement.*/
+/*
+ul:before
+{
+    content: "Championnat de Pétanque";
+    background: rgb(93, 223, 223);
+    color: black;
+    text-decoration: underline;
+}
+*/
+/*
+p
+{
+    color: #ccc;
+    padding:5px;
+    background-color: blue;
+}
+
+.class1
+{
+    background-color: rgb(157, 157, 189);
+    border: none !important;
+}
+
+#id1
+{
+    background-color: red;
+    border: black 2px solid;
+}
+
+
+footer
+{
+    background-color: #ccc;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 14px;
+    color: green;
+}
+/* J'utilise l'heritage de l'element au dessus pour qu'il copie sa couleur,
+il me suffira de changer celle de footer pour que celle de footer a change aussi.*/
+footer a
+{
+    color: inherit;
+}
+
+.testnone
+{
+    display: none;
+}
+
+p
+{
+    padding: 1em;
+    border:1px solid black;
+}
+
+span
+{
+    border: solid green;
+    background-color: yellow;
+    width: 600px;
+}
+
+.inline
+{
+    display: inline;
+}
+
+.block
+{
+    display: block ;
+}
+
+.inlineblock
+{
+    display: inline-block;
+}

@@ -1,0 +1,48 @@
+{
+    "bibli" : [
+        {
+            "image1"  : 
+            {
+                "selscet_id":"0",
+                "nom_artiste": "philipp kruse",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            },
+            "image2" : 
+            {
+                "selscet_id":"1",
+                "nom_artiste": "philipp kkruseun",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            },
+            "image3" : 
+            {
+                "selscet_id":"2",
+                "nom_artiste": "philipp kruseDeux",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            },               
+            "image4"  : 
+            {
+                "selscet_id":"3",
+                "nom_artiste": "philipp kruseTrois",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            },
+            "image5" : 
+            {
+                "selscet_id":"4",
+                "nom_artiste": "philipp kruseQuatre",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            },
+            "image6" : 
+            {
+                "selscet_id":"5",
+                "nom_artiste": "philipp kruseCinq",
+                "titre_oeuvre":"eagle",
+                "liens_oeuvre":"" 
+            }
+        }
+    ]
+}
