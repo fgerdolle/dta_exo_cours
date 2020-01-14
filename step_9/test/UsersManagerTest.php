@@ -8,7 +8,24 @@ use Domain\User as User;
 
 
 
+$config = include '../inc/constants.php';
+$UserDao = new UserDao($config);
 
+$result = $UserDao->deleteUser(11);
+
+if ($result) {
+    echo 'Id a été supprimé';
+}
+else {
+    echo 'Erreur lors de la suppression';
+}
+
+
+
+
+
+
+/*
 $config = include '../inc/constants.php';
 
 $UserDao = new UserDao($config);
@@ -19,7 +36,7 @@ $user1 = new User(null, 'Alberto', 'Contador', 'MDP');
 
         echo 'User créé avec ID :' .$id;
 
-/*
+
  * UsersManager test case.
 
 class UsersManagerTest  {

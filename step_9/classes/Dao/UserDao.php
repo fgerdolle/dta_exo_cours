@@ -80,7 +80,7 @@ class UserDao extends DaoBase {
         
         $query->bindParam(":id", $id);
         
-        $query->execute();
+        return $query->execute();
     }
     
     public function updateUser($user) {
@@ -97,6 +97,6 @@ class UserDao extends DaoBase {
         
         $query->bindParam(":id", $user->id);
         
-        $query->execute();
+        return $query->execute();
     }
 }
