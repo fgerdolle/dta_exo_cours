@@ -87,7 +87,7 @@ class UserDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("UPDATE users SET firstName = :firstName, lastName = :lastName, password = :pawword WHERE id = :id");
+        $query = $this->bdd->prepare("UPDATE users SET firstName = :firstName, lastName = :lastName, password = :password WHERE id = :id");
         
         $query->bindParam(":firstName", $user->firstName);
         
@@ -98,5 +98,7 @@ class UserDao extends DaoBase {
         $query->bindParam(":id", $user->id);
         
         return $query->execute();
+
+         
     }
 }

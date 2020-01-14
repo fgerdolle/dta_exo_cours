@@ -6,8 +6,21 @@ require_once '../inc/autoload.php';
 use Dao\UserDao as UserDao;
 use Domain\User as User;
 
+$config = include '../inc/constants.php';
+$UserDao = new UserDao($config);
+$user1 = new User(3, 'Vincent', 'Paquin', 'PootPoot');
+$result = $UserDao->updateUser($user1);
+
+if ($result) {
+    echo 'Id a été modifié';
+}
+else {
+    echo 'Erreur lors de la modification';
+}
 
 
+
+/*
 $config = include '../inc/constants.php';
 $UserDao = new UserDao($config);
 
@@ -19,7 +32,7 @@ if ($result) {
 else {
     echo 'Erreur lors de la suppression';
 }
-
+*/
 
 
 
