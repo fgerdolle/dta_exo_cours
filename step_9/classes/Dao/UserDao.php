@@ -11,15 +11,16 @@ class UserDao extends DaoBase {
         
         $result = [];
         
-        $reponse = $this->bdd->query("SELECT id, firstName, lastName FROM users order by id");
+        $reponse = $this->bdd->query("SELECT id, firstName, lastName, password FROM users order by id");
         
         while ($donnees = $reponse->fetch()) {
             
             $id = $donnees["id"];
             $firstName = $donnees["firstName"];
             $lastName = $donnees["lastName"];
+            $password = $donnees["password"];
             
-            $user = new User($id, $firstName, $lastName);
+            $user = new User($id, $firstName, $lastName, $password);
             
             $result[] = $user;
         }
@@ -33,7 +34,7 @@ class UserDao extends DaoBase {
         
         $result = NULL;
         
-        $query = $this->bdd->prepare("SELECT id, firstName, lastName FROM users where id = :id");
+        $query = $this->bdd->prepare("SELECT id, firstName, lastName , password FROM users where id = :id");
         
         $query->bindParam(":id", $id);
         
@@ -44,8 +45,9 @@ class UserDao extends DaoBase {
                 $id = $donnees["id"];
                 $firstName = $donnees["firstName"];
                 $lastName = $donnees["lastName"];
+                $password = $donnees["password"];
                 
-                $result = new User($id, $firstName, $lastName);
+                $result = new User($id, $firstName, $lastName, $password);
             }
         }
         
@@ -85,11 +87,13 @@ class UserDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("UPDATE users SET firstName = :firstName, lastName = :lastName WHERE id = :id");
+        $query = $this->bdd->prepare("UPDATE users SET firstName = :firstName, lastName = :lastName, password = :pawword WHERE id = :id");
         
         $query->bindParam(":firstName", $user->firstName);
         
         $query->bindParam(":lastName", $user->lastName);
+
+        $query->bindParam(":password", $user->password);
         
         $query->bindParam(":id", $user->id);
         

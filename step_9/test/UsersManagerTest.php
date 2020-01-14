@@ -1,16 +1,28 @@
 <?php
-namespace FirstMvc\Test;
+namespace test;
 
-require '../model/UsersManager.php';
+require_once '../inc/autoload.php';
 
-use \PHPUnit\Framework\TestCase as TestCase;
+use Dao\UserDao as UserDao;
+use Domain\User as User;
 
-use \FirstMvc\Model\UsersManager as UsersManager;
 
-/**
+
+
+$config = include '../inc/constants.php';
+
+$UserDao = new UserDao($config);
+
+$user1 = new User(null, 'Alberto', 'Contador', 'MDP');
+        
+        $id = $UserDao->insertUser($user1);
+
+        echo 'User créé avec ID :' .$id;
+
+/*
  * UsersManager test case.
- */
-class UsersManagerTest extends TestCase {
+
+class UsersManagerTest  {
 
     private $usersManager;
 
@@ -27,7 +39,7 @@ class UsersManagerTest extends TestCase {
         
         parent::tearDown();
     }
-
+    /*
     public function testGetUsers() {
         
         $users = $this->usersManager->getUsers();
@@ -47,5 +59,8 @@ class UsersManagerTest extends TestCase {
         
         $this->assertEquals('LFC', $user->password);
     }
+
 }
+    */
+
 
