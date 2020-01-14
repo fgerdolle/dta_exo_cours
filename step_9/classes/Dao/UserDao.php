@@ -58,11 +58,11 @@ class UserDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("INSERT INTO users (firstName, lastName) VALUES (:firstName, :lastName)");
+        $query = $this->bdd->prepare("INSERT INTO users (firstName, lastName, password) VALUES (:firstName, :lastName, :password)");
         
         $query->bindParam(":firstName", $user->firstName);
         $query->bindParam(":lastName", $user->lastName);
-        
+        $query->bindParam(":password", $user->password);
         $query->execute();   
         
         $id = $this->bdd->lastInsertId();
