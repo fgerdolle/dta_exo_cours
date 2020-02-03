@@ -1,0 +1,13 @@
+{
+    "name": "dta/composer",
+    "description": "exo sur composer",
+    "authors": [
+        {
+            "name": "Franck Gerdolle",
+            "email": "franck.gerdolle@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.29"
+    }
+}
