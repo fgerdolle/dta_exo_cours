@@ -13,7 +13,6 @@ $birth = Carbon::create(1988, 11, 13, 18, 45, 0);
 
 $student = new Student('Franck','Gerdolle');
 
-
 echo 'je suis'.''.$student->getFullName();
 
 echo '<br>';
