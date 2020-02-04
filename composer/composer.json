@@ -7,7 +7,14 @@
             "email": "franck.gerdolle@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "dta_exo_cours\\composer\\": "src"
+        }
+    },
     "require": {
-        "nesbot/carbon": "^2.29"
+        "nesbot/carbon": "^2.29",
+        "respect/validation": "^1.1",
+        "monolog/monolog": "^2.0"
     }
 }
