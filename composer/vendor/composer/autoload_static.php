@@ -11,11 +11,27 @@ class ComposerStaticInit74e481b6ee789c895b3f93ed9de48df4
     );
 
     public static $prefixLengthsPsr4 = array (
+        'd' => 
+        array (
+            'dta_exo_cours\\composer\\' => 23,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
+        ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
         'C' => 
         array (
@@ -24,6 +40,10 @@ class ComposerStaticInit74e481b6ee789c895b3f93ed9de48df4
     );
 
     public static $prefixDirsPsr4 = array (
+        'dta_exo_cours\\composer\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -35,6 +55,18 @@ class ComposerStaticInit74e481b6ee789c895b3f93ed9de48df4
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Carbon\\' => 
         array (
