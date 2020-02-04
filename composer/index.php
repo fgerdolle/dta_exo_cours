@@ -37,6 +37,17 @@ echo '<br>';
 
 echo "nombre d'année depuis ma naissance :".$now->diffInYears($birth);
 
+echo '<br>';
+
+$number = 123;
+echo '<div>Is 123 a valid number ? '
+        .(Validator::numeric()->validate($number) ? 'true' : 'false')
+        .'</div>';
+
+$number = 'abc';
+echo '<div>Is abc a valid number ? '
+        .(Validator::numeric()->validate($number) ? 'true' : 'false')
+        .'</div>';        
 
 
 
